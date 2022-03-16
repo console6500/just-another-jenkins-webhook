@@ -31,6 +31,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'chmod +x external-script.sh'
+                sh './external-script.sh'
             }
         }
         stage('Test') {
