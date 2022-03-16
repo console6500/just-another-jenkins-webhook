@@ -41,21 +41,6 @@ pipeline {
         stage('Report') {
             steps {
                 echo 'Reporting....'
-                echo  "BRANCH_IS_PRIMARY           =  ${env.BRANCH_IS_PRIMARY}"
-                echo  "BRANCH_NAME                 =  ${env.BRANCH_NAME}"
-                echo  "CHANGE_AUTHOR               =  ${env.CHANGE_AUTHOR}"
-                echo  "CHANGE_AUTHOR_DISPLAY_NAME  =  ${env.CHANGE_AUTHOR_DISPLAY_NAME}"
-                echo  "CHANGE_AUTHOR_EMAIL         =  ${env.CHANGE_AUTHOR_EMAIL}"
-                echo  "CHANGE_BRANCH               =  ${env.CHANGE_BRANCH}"
-                echo  "CHANGE_FORK                 =  ${env.CHANGE_FORK}"
-                echo  "CHANGE_ID                   =  ${env.CHANGE_ID}"
-                echo  "CHANGE_TARGET               =  ${env.CHANGE_TARGET}"
-                echo  "CHANGE_TITLE                =  ${env.CHANGE_TITLE}"
-                echo  "CHANGE_URL                  =  ${env.CHANGE_URL}"
-                echo  "TAG_DATE                    =  ${env.TAG_DATE}"
-                echo  "TAG_NAME                    =  ${env.TAG_NAME}"
-                echo  "TAG_TIMESTAMP               =  ${env.TAG_TIMESTAMP}"
-                echo  "TAG_UNIXTIME                =  ${env.TAG_UNIXTIME}"
             }
         }
     }
